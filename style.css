@@ -431,3 +431,44 @@ img{
 }
 
 /* ================ Contact ================= */
+.contact_container{
+    text-align: center;
+}
+
+.contact_description{
+    margin-bottom: var(--mb-3);
+}
+
+/* ================ Footer ================= */
+.footer_container{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    row-gap: 2rem;
+}
+
+.footer_logo{
+    font-size: var(--h3-font-size);
+    color: var(--first-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.footer_description{
+    display: block;
+    font-size: var(--small-font-size);
+    margin: .25rem 0 var(--mb-3);
+}
+
+.footer_social{
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-right: var(--mb-2);
+}
+
+.footer_title{
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    margin-bottom: var(--mb-2);
+}
+
+.footer_link{
+    display: inline-block;
+}
