@@ -372,7 +372,7 @@ img{
 }
 
 .menu_img{
-    width: 100px;
+    width: 500px;
     align-self: center;
     margin-bottom: var(--mb-2);
 }
@@ -393,3 +393,41 @@ img{
 .menu_details {
     margin-bottom: var(--mb-1);
 }
+
+.menu_button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: .625rem .813rem;
+    border-radius: .5rem 0 .5rem 0;
+    -webkit-border-radius: .5rem 0 .5rem 0;
+    -moz-border-radius: .5rem 0 .5rem 0;
+    -ms-border-radius: .5rem 0 .5rem 0;
+    -o-border-radius: .5rem 0 .5rem 0;
+}
+
+/* ================ App ================= */
+.app_data{
+    text-align: center;
+}
+
+.app_description{
+    margin-bottom: var(--mb-5);
+}
+
+.app_stores{
+    margin-bottom: var(--mb-4);
+}
+
+.app_store{
+    width: 120px;
+    margin: 0 var(--mb-1);
+}
+
+.app_img{
+    width: 230px;
+    justify-self: center;
+}
+
+/* ================ Contact ================= */
