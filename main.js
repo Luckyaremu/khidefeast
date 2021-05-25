@@ -63,3 +63,49 @@ function scrollTop(){
 
 }
 window.addEventListener('scroll', scrollTop)
+
+
+
+/*===== dark/light theme =====*/
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'bx-sun'
+
+//previosely selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
+
+//we obatin the current them that the interface has by validating the dark them class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.body.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun'
+
+//we validate if the user previously choose a topic
+if(selectedTheme){
+    // if the validation is fulfilled, we ask what the issue was to know if we activated or diactivated the dark mood
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove' ](darkTheme)
+    themeButton.classList[selectedIcon === 'bx-moon' ? 'add' : 'remove' ](iconTheme)
+}
+
+//activate and diactivate the theme manualy with a button
+themeButton.addEventListener('click', ()=>{
+    //add or remove the dark/icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+    //we save the theme and the current icon that the user choose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
+
+
+/*===== scroll reveal animation =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+
+sr.reveal(`.home_data, .home_img, .about_data, .about_img, .services_content, .menu_contents, .app_data, .app_img, 
+.contact_data, .contact_button, .footer_content  `, {
+    interval:200
+})
