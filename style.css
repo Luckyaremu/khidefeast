@@ -3,11 +3,10 @@
 
 :root {
     --header-height: 3rem;
-
-    --first-color: #069c54;
-    --first-color-alt: #048654;
+    --first-color: #ff8700;
+    --first-color-alt: #facb22;
     --title-color: #393939;
-    --text-color: #707070;
+    --text-color: #000000;
     --text-color-light: #A6A6A6;
     --body-color: #fbfbfb;
     --container-color: #ffffff;
@@ -189,7 +188,10 @@ img{
 .nav_item{
     margin-bottom: var(--mb-2);
 }
-
+.nav_logo1{
+    width: 100px;
+    height: 50px;
+}
 .nav_link, .nav_logo, .nav_toggle{
     color: var(--text-color);
     font-weight: var(--font-medium);
@@ -245,7 +247,7 @@ img{
     justify-content: center;
     align-items: center;
     padding: .3rem;
-    background: rgba(6, 156, 84, .5);
+    background: #ff8700;
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4s;
@@ -370,10 +372,16 @@ img{
 
 /* ================ Menu ================= */
 .menu_container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     justify-content: center;
 }
 
+.place_order{
+    justify-content: center;
+    font-size: var(--mb-2);
+    align-self: center;
+    margin: auto;
+}
 .menu_contents{
     position: relative;
     display: flex;
@@ -428,7 +436,14 @@ img{
 .app_data{
     text-align: center;
 }
-
+.okada{
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    column-gap: 4rem;
+    justify-content: center;
+    align-self: center;
+    margin-left: var(--mb-2);
+}
 .app_description{
     margin-bottom: var(--mb-5);
 }
@@ -443,7 +458,8 @@ img{
 }
 
 .app_img{
-    width: 230px;
+    width: 100%;
+    height: 100px;
     justify-self: center;
 }
 
@@ -517,8 +533,8 @@ img{
     .contact_container, .contact_initial{
         text-align: initial;
     }
-
-    .about_img, .app_img{
+    
+    .about_img {
         width: 380px;
         order: -1;
     }

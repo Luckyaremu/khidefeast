@@ -106,6 +106,6 @@ const sr = ScrollReveal({
 });
 
 sr.reveal(`.home_data, .home_img, .about_data, .about_img, .services_content, .menu_contents, .app_data, .app_img, 
-.contact_data, .contact_button, .footer_content  `, {
+.contact_data, .contact_button, .footer_content`, {
     interval:200
 })
