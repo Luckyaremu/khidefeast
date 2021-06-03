@@ -64,8 +64,6 @@ function scrollTop(){
 }
 window.addEventListener('scroll', scrollTop)
 
-
-
 /*===== dark/light theme =====*/
 const themeButton = document.getElementById('theme-button')
 const darkTheme = 'dark-theme'
