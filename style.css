@@ -289,6 +289,7 @@ img{
     font-size: var(--biggest-font-size);
     color: var(--first-color);
     margin-bottom: var(--mb-1);
+    padding-top: 50px;
 }
 
 .home-subtitle {
@@ -449,15 +450,6 @@ img{
     -o-border-radius: .5rem 0 .5rem 0;
 }
 
-/*
-
-@media screen and (min-width: 300px){
-    .menu_container {
-        grid-template-columns: repeat(1, 145px);
-        justify-content: center;
-    }
-}
-*/
 
 /* ================ App ================= */
 .app_data{
@@ -547,6 +539,21 @@ img{
 }
 
 /* ================ Media queries ================= */
+
+@media screen and (min-width: 374px){
+    .home_title,
+    .home_subtitle
+    {
+        margin-left: 64px;
+    }
+}
+
+@media screen and (min-width: 320px){
+    .home_title
+    {
+        padding-top: 109px;
+    }
+}
 
 @media screen and (min-width: 576px){
     .home_container,
